@@ -1,0 +1,15 @@
+.text__center {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	gap: 50px;
+	@media screen and (max-width: 576px) {
+		gap: 0;
+	}
+}

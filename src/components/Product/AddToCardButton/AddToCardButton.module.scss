@@ -1,0 +1,14 @@
+.card__basket_btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background: #ff842c;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background .2s ease-in;
+	&:hover{
+		background: #ea6608;
+	}
+}

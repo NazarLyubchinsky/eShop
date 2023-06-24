@@ -1,0 +1,28 @@
+{
+  "name": "f22-next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.1",
+    "final-form": "^4.20.9",
+    "lodash.debounce": "^4.0.8",
+    "next": "^13.3.1",
+    "openai": "^3.2.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "18.2.0",
+    "react-final-form": "^6.5.9",
+    "react-icons": "^4.8.0",
+    "sass": "^1.62.0",
+    "start": "^5.1.0",
+    "swiper": "^9.2.4"
+  }
+}

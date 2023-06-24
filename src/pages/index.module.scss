@@ -1,0 +1,17 @@
+.product__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+.product__item {
+	width: 25%;
+	padding: 0 10px;
+	@media screen and (max-width: 992px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}

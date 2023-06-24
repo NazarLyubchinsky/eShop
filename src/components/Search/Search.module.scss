@@ -1,0 +1,102 @@
+.search {
+	display: flex;
+	align-items: center;
+	position: relative;
+	@media screen and (max-width: 576px) {
+		display: none;
+	}
+
+	button {
+		background: #ff842c;
+		border-radius: 0px 6px 6px 0px;
+		color: #fff;
+		border: 1px solid #ff842c;
+		outline: none;
+		width: 78px;
+		height: 31px;
+		transition: background 0.2s ease, opacity 0.2s ease;
+	}
+	.search__btn {
+		&:hover {
+			background-color: #ff542c;
+		}
+	}
+
+	input {
+		position: relative;
+		width: 100%;
+		height: 31px;
+		border: 1px solid #fff;
+		border-radius: 6px 0px 0px 6px;
+		outline: none;
+		padding-left: 30px;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 31px;
+		height: 31px;
+		background: url("../../assets/img/Vector.png") no-repeat center center;
+		background-size: 20px;
+	}
+}
+
+.results {
+	position: absolute;
+	padding: 10px;
+	top: 100%;
+	right: 0;
+	width: 223%;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 0 0 10px 10px;
+	z-index: 1000;
+	margin-top: 21px;
+	overflow-y: scroll;
+	height: 76vh;
+	&::-webkit-scrollbar {
+		width: 1px;
+	}
+	@media screen and (max-width: 1340px) {
+		width: 198%;
+	}
+	@media screen and (max-width: 1200px) {
+		width: 180%;
+		height: 72vh;
+	}
+	@media screen and (max-width: 992px) {
+		width: 135%;
+		height: 66vh;
+	}
+	@media screen and (max-width: 769px) {
+		width: 160%;
+		height: 54vh;
+	}
+	button {
+		display: flex;
+		justify-content: end;
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		color: black;
+	}
+	.results__close:hover {
+		opacity: 0.7;
+	}
+}
+.product {
+	display: flex;
+	padding: 10px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+.product__img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
